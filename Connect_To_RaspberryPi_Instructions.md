@@ -9,7 +9,7 @@ Verify I2C is enabled
 Edit the file /boot/config.txt  and add this line:<br>
 dtoverlay=rv3028-rtc<br>
 
-<img src="/images/editConfig.jpg"
+<img src="/images/editConfig.png"
 	alt = "edit config file"
 />
 <img src="/images/editConfigdt.jpg"
@@ -32,7 +32,7 @@ and this line<br>
 and this line<br>
   /sbin/hwclcok --rtc=$dev --systz
 
-<img src="/images/edithwClock.png"
+<img src="/images/edithwClock.jpg"
 	alt = "edit hw clock file"
 /><br>
 <img src="/images/edithwClockCO1.jpg"
