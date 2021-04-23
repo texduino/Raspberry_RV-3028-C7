@@ -8,8 +8,14 @@ Verify I2C is enabled
 
 Edit the file /boot/config.txt  and add this line:<br>
 dtoverlay=rv3028-rtc<br>
-../images/editConfig.jpg<br>
-../images/editConfigdt.jpg<br>
+
+<img src="/images/editConfig.jpg"
+	alt = "edit config file"
+/>
+<img src="/images/editConfigdt.jpg"
+	alt = "nano edit config file"
+/>
+<br>
 
 
 restart<br>
@@ -25,10 +31,16 @@ and this line<br>
   
 and this line<br>
   /sbin/hwclcok --rtc=$dev --systz
-  
-../images/edithwClock.jpg<br>
-../images/edithwClockCO1.jpg<br>
-../images/edithwClockCO2.jpg<br>
+
+<img src="/images/edithwClock.jpg"
+	alt = "edit hw clock file"
+/><br>
+<img src="/images/edithwClockCO1.jpg"
+	alt = "nano edit hw clock file"
+/><br>
+<img src="/images/edithwClockCO2.jpg"
+	alt = "nano edit config file"
+/><br>
 
 
 restart<br>
