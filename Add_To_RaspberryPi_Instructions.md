@@ -4,29 +4,35 @@ make sure the raspberry pi is updated<br>
 sudo apt-get update<br>
 sudo apt-get upgrade<br>
 
-enable the I2C bus in the configuration<br>
-sudo raspi-config<br> 
+Edit the file /boot/config.txt  and add this:
+dtoverlay=rv3028-rtc
 
-install the I2C python library<br>
-sudo apt-get install python-smbus i2c-tools<br> 
+restart<br>
+sudo reboot
 
-verify the raspberry pi can communicate with the RV-3028-C7 breakout board<br>
-sudo i2cdetect -y 1 
+Edit the file /lib/udev/hwclock-set and comment out the lines:
+if [ -e /run/systemd/system ] ; then
+    exit 0
+fi
 
-the TexDuino RV-3028-C7 is at address 52
+and this line<br>
+  /sbin/hwclock  --rtc=$dev --systz  --badyear
+  
+and this line<br>
+  /sbin/hwclcok --rtc=$dev --systz
+  
+restart<br>
+sudo reboot
 
-load the RV-3028-C7 RTC driver<br>
-sudo nano /boot/config.txt<br> 
-Add these lines at the end of the file:<br>
-dtoverlay=i2c-rtc,rv3028<br> 
-dtparam=i2c_baudrate=400000<br>
 
-sudo reboot 
+To set the time:<br>
+sudo hwclock -s
 
-sudo apt-get -y remove fake-hwclock
-
-To read time:
-sudo hwclock -v -r
-
-To write time:
+To write time:<br>
 sudo hwclock -w 
+
+To read time:<br>
+sudo hwclock -r
+
+
+
