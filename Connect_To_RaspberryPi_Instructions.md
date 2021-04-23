@@ -1,5 +1,11 @@
 ## Connecting the TexDuino RV-3028-C7 RTC to a Raspberry PI
 
+Connect the TexDuino RV-3028-C7 breakout board to the Raspberry Pi:
+
+<img src="/images/Connection Pinout - TexDuino RV-3028-C7 to Raspberry Pi.png"
+	alt = "connecting the RTC"
+/>
+
 make sure the raspberry pi is updated:<br>
 sudo apt-get update<br>
 sudo apt-get upgrade<br>
