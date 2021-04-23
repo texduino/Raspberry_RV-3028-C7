@@ -4,13 +4,13 @@ make sure the raspberry pi is updated<br>
 sudo apt-get update<br>
 sudo apt-get upgrade<br>
 
-Edit the file /boot/config.txt  and add this:
+Edit the file /boot/config.txt  and add this line:<br>
 dtoverlay=rv3028-rtc
 
 restart<br>
 sudo reboot
 
-Edit the file /lib/udev/hwclock-set and comment out the lines:
+Edit the file /lib/udev/hwclock-set and comment out the lines:<br>
 if [ -e /run/systemd/system ] ; then
     exit 0
 fi
