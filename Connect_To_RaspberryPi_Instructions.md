@@ -1,6 +1,6 @@
 ## Connecting the TexDuino RV-3028-C7 RTC to a Raspberry PI
 
-make sure the raspberry pi is updated<br>
+make sure the raspberry pi is updated:<br>
 sudo apt-get update<br>
 sudo apt-get upgrade<br>
 
@@ -18,8 +18,7 @@ dtoverlay=rv3028-rtc<br>
 <br>
 
 
-restart<br>
-sudo reboot
+restart: sudo reboot<br>
 
 Edit the file /lib/udev/hwclock-set and comment out the lines:<br>
 if [ -e /run/systemd/system ] ; then
@@ -43,9 +42,7 @@ and this line<br>
 /><br>
 
 
-restart<br>
-sudo reboot
-
+restart: sudo reboot<br>
 
 To set the time:<br>
 sudo hwclock -s
@@ -55,6 +52,3 @@ sudo hwclock -w
 
 To read time:<br>
 sudo hwclock -r
-
-
-
