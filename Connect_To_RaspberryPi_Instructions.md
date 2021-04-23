@@ -12,7 +12,7 @@ dtoverlay=rv3028-rtc<br>
 <img src="/images/editConfig.png"
 	alt = "edit config file"
 />
-<img src="/images/editConfigdt.jpg"
+<img src="/images/editConfigdt.png"
 	alt = "nano edit config file"
 />
 <br>
@@ -32,13 +32,13 @@ and this line<br>
 and this line<br>
   /sbin/hwclcok --rtc=$dev --systz
 
-<img src="/images/edithwClock.jpg"
+<img src="/images/edithwClock.png"
 	alt = "edit hw clock file"
 /><br>
-<img src="/images/edithwClockCO1.jpg"
+<img src="/images/edithwClockCO1.png"
 	alt = "nano edit hw clock file"
 /><br>
-<img src="/images/edithwClockCO2.jpg"
+<img src="/images/edithwClockCO2.png"
 	alt = "nano edit config file"
 /><br>
 
