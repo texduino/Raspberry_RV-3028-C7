@@ -32,7 +32,7 @@ and this line<br>
 and this line<br>
   /sbin/hwclcok --rtc=$dev --systz
 
-<img src="/images/edithwClock.jpg"
+<img src="/images/edithwClock.png"
 	alt = "edit hw clock file"
 /><br>
 <img src="/images/edithwClockCO1.jpg"
