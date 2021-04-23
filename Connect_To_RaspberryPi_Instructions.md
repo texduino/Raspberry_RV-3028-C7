@@ -1,11 +1,16 @@
-## Adding the TexDuino RV-3028-C7 RTC to a Raspberry PI
+## Connecting the TexDuino RV-3028-C7 RTC to a Raspberry PI
 
 make sure the raspberry pi is updated<br>
 sudo apt-get update<br>
 sudo apt-get upgrade<br>
 
+Verify I2C is enabled
+
 Edit the file /boot/config.txt  and add this line:<br>
-dtoverlay=rv3028-rtc
+dtoverlay=rv3028-rtc<br>
+../images/editConfig.jpg<br>
+../images/editConfigdt.jpg<br>
+
 
 restart<br>
 sudo reboot
@@ -21,6 +26,11 @@ and this line<br>
 and this line<br>
   /sbin/hwclcok --rtc=$dev --systz
   
+../images/edithwClock.jpg<br>
+../images/edithwClockCO1.jpg<br>
+../images/edithwClockCO2.jpg<br>
+
+
 restart<br>
 sudo reboot
 
